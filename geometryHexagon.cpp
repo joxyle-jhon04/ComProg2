@@ -7,7 +7,7 @@ int main(){
     const double pie = 3.14159;
     double area, side;
 
-    area = (6 * side) / (4 * tan(pie/6));
+    area = (3 * sqrt(3) * pow(side, 2)) / 2;
 
     cout << "Enter the side: " << endl;
     cin >> side;
