@@ -4,15 +4,14 @@
 using namespace std;
 
 int main(){
-    const double pie = 3.14159;
-    double area, side;
+    const double pi = 3.14159265358979323846;
+    double area, s;
 
-    area = (3 * sqrt(3) * pow(side, 2)) / 2;
+    cout << "Enter the lenght of a side of the hexagon: " << endl;
+    cin >> s;
 
-    cout << "Enter the side: " << endl;
-    cin >> side;
-
-    cout << "The area of the hexagon is: " << area << endl;
+    area = 6 * pow(s, 2) / (4 * tan(pi/6));
+    cout << "The area of the hexagon is:" << area << endl;
     return 0;
 
 }
